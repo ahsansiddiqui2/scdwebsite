@@ -111,3 +111,7 @@ footer {
     color: #000;
     background-color: #008bff;
 }
+.crousel{
+    margin: 10px;
+    border: 2px solid black;
+}
