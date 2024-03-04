@@ -114,4 +114,8 @@ footer {
 .ticker{
     width: 100vw;
     background-color: yellow;
+} 
+.crousel{
+    margin: 10px;
+    border: 2px solid black;
 }
