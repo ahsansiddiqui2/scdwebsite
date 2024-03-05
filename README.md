@@ -1,42 +1,54 @@
-# Flock Website
+# Astro Starter Kit: Basics
 
-## Overview
-This repository contains the source code for the Flock website, a platform dedicated to providing innovative list-making solutions. Flock combines years of industry experience with cutting-edge cloud technology to offer a unique service aimed at helping parents manage their tasks more efficiently. The website features a clean, user-friendly design that is fully responsive, ensuring a seamless experience across all devices.
+```sh
+npm create astro@latest -- --template basics
+```
 
-## Features
-- **Static Pages:** Home, About, Services, and Contact.
-- **Responsive Design:** The website is fully responsive, making it accessible on a wide range of devices from desktops to smartphones.
-- **Navigation Menu:** An intuitive navigation menu for easy access to all sections of the website.
-- **SVG Graphics:** Use of SVG graphics for crisp, scalable icons in the Services section.
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
-## Technologies Used
-- **HTML5:** For structuring the content of the website.
-- **CSS3:** For styling and responsive design implementation.
-- **JavaScript (Optional):** For enhancing interactivity (Note: JavaScript usage is minimal in this project, focusing on the foundational HTML and CSS).
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## Setup
-To run this website locally, follow these steps:
+![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
 
-1. Clone the repository to your local machine.
-    ```sh
-    git clone https://github.com/ahsansiddiqui2/flock-website.git
-    ```
-2. Open the `index.html` file in your web browser.
+## 🚀 Project Structure
 
-## Structure
-- `index.html` - The home page of the website.
-- `about.html` - The About Us page, detailing the history and mission of Flock.
-- `services.html` - The Services page, listing the services offered by Flock.
-- `contact.html` - The Contact page, containing a form for users to get in touch with Flock.
-- `css/styles.css` - The stylesheet for the website, containing all the CSS rules for styling and responsiveness.
+Inside of your Astro project, you'll see the following folders and files:
 
-## Contributing
-Contributions to the Flock website are welcome! If you have suggestions for improvements or encounter any issues, please feel free to submit an issue or pull request.
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   └── Card.astro
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-## Acknowledgments
-- Icons provided by [SVGRepo](https://www.svgrepo.com/).
-- Flock team for their invaluable input and feedback during the development process.
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
+Any static assets, like images, can be placed in the `public/` directory.
+
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

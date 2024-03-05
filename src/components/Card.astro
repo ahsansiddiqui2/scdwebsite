@@ -1,0 +1,32 @@
+---
+interface Props {
+	img: string;
+	name: string;
+	btn1: string;
+	btn2: string;
+}
+
+const { img, name, btn1, btn2 } = Astro.props;
+---
+
+<div class="card w-80 pb-4 rounded-lg drop-shadow-2xl shadow-inner bg-zinc-700">
+	<img class="rounded-md" src={img} alt="">
+	<h3 class="my-2 mx-2">{name}</h3>
+	<div class="my-2 mx-2">
+		<span class="btn"><a href={btn1}><i class="devicon-github-original"></i>Github</a></span>
+		<span class="btn"><a href={btn2}><i class="devicon-netlify-plain"></i>Web</a></span>
+	</div>
+</div>
+
+<style>
+	.btn{
+		margin: 0 0.5rem;
+		font-size: small;
+		background-color: rgb(37, 34, 34);
+		padding: 0.35rem;
+		border-radius: 6px;
+	}
+	.btn i{
+		margin-right: 5px;
+	}
+</style>
